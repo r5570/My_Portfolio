@@ -1,0 +1,628 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@media (max-width:2100px) {
+
+    /* --------------code for home page---------------- */
+
+
+    body {
+
+        height: 100%;
+
+
+        background-color: rgb(17, 16, 16);
+
+        .index-header {
+            width: 100%;
+            height: 65px;
+            /* background-color: rgb(23, 15, 255); */
+
+
+            nav {
+                padding-top: 15px;
+
+                position: absolute;
+                right: 30px;
+                top: 0px;
+                width: 410px;
+                height: 65px;
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+                button {
+
+                    width: 100px;
+                    height: 30px;
+                    font-size: 12px;
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+
+            }
+        }
+
+
+        .index-main {
+
+            margin-top: 20px;
+            position: relative;
+
+          
+
+            .name {
+
+                font-size: 1.80em;
+                font-weight: bolder;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                justify-self: center;
+                justify-items: center;
+                margin-top:-30px;
+                color:white; 
+
+                p{
+
+                    em{
+
+                        display:block;
+                        font-size:14px;
+                        padding-top:2px;
+                    }
+                }
+
+
+                .iam{
+
+                    font-size: 12px;
+                    font-style:italic;
+                    font-weight:bolder;
+                    padding-top: 20px;
+                    align-items: center;
+                    padding-top:6px;
+                    padding-bottom:16px;
+                    
+                }
+               
+
+
+                .rotate {
+
+                    width: 40px;
+                    height: 40px;
+                    border: 0.50px solid white;
+                    display: inline-block;
+                    margin-top: 20px;
+                    margin-right: 14px;
+                    margin-left: 14px;
+                    border-radius: 28%;
+
+                }
+
+                ul {
+                     display: flex;
+                     width: 100%;
+                     justify-content: space-evenly;
+                     margin-left: -30px;
+                     margin-top:10px;
+
+
+                    li {
+                        font-size: 12px;
+                        font-style:normal;
+                        font-weight: 100;
+
+                    }
+                }
+
+
+            }
+
+
+            .click-buttons{
+
+                display: flex;
+                justify-content: center;
+                margin-left: -40px;
+                margin-top: 50px;
+
+                .c-button{
+
+
+                    padding-left: 40px;
+                    width: 180px;
+                    height: 40px;
+                    border-radius: 25%;
+
+                    button{
+
+                        width:100%;
+                        height:100%;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 12px;
+                        /* border-radius: 4px; */
+                    }
+
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+    .button:hover {
+
+        background-color: rgb(255, 255, 255);
+        color: rgb(3, 3, 3);
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+
+    button:hover{
+
+        background-color: black;
+        border:0.10px solid white;
+        color:white;
+    }
+
+
+    body:hover {
+
+        .rotate {
+            transform: rotate(700000deg);
+            transition-duration: 270s;
+            transition-delay: now;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+    /* --------------------Code for about page -----------------------*/
+
+    .about-body {
+
+        color: white;
+
+        header {
+            position: relative;
+            border-bottom: 0.90px solid white;
+
+            button {
+                position: absolute;
+                margin-top: 10px;
+                right: 40px;
+                width: 100px;
+                height: 30px;
+                font-size: 9px;
+                font-weight: bold;
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            #My-name {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: white;
+                text-align: center;
+
+
+
+                big {
+
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+
+                small {
+
+                    font-size: 1.10em;
+                    font-weight: bold;
+                }
+
+
+            }
+        }
+
+
+
+
+        main {
+
+            margin-top: 1px;
+
+            .about-section {
+
+             
+                display: grid;
+                grid-template-columns: 20% 80%;
+
+                width: 100%;
+
+                .my-image {
+
+                    width: 150px;
+                    height: 150px;
+                    margin-left:10px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 6px solid white;
+                    margin-top: 150px;
+
+                    img {
+
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+
+                    }
+
+                   
+                }
+
+
+                .my-details {
+
+                    color: white;
+                    padding-left: 30px;
+                    padding-top: 50px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 14px;
+
+
+                    p{
+
+                        margin-bottom: 40px;
+                        margin-left:4px;
+                        margin-right: 4px;
+                    
+                    }
+
+
+                    h5{
+
+                        padding-top:30px;
+                    }
+
+
+                }
+
+
+
+            }
+
+            h3 {
+
+                font-size: 1em;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+           
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 14px;
+
+            }
+
+
+
+
+            /* code for skills */
+
+
+            article {
+
+                color: white;
+                display: flex;
+                justify-content: space-around;
+
+
+
+
+                .skill-image {
+
+                    width: 90px;
+                    height: 100px;
+                    overflow: hidden;
+                    color: white;
+                    margin-top:40px;
+
+                    img {
+
+
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+
+
+                }
+                .s-name{
+                    margin-left:16px;
+                    margin-top: 12px;
+                    display: inline;
+                    font-size:8px;
+                }
+
+
+
+            }
+
+           
+
+             a{
+
+                text-decoration: none;
+                
+             }
+            .skill-work {
+
+                margin-top: 60px;
+                border-top: 0.90px solid white;
+                border-bottom: 0.90px solid white;
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                color: white;
+                
+                small{
+
+                    padding-top: 20px;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+            }
+
+
+            /* code for contact information */
+
+
+            h5{
+                margin-left: 4px;
+            }
+
+            p{
+                margin-left: 4px;
+            }
+
+
+
+            .contact-section {
+
+                margin-left: 20px;
+
+                h3 {
+
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+
+                p {
+
+                    color: white;
+
+
+
+                }
+
+                li {
+
+                    padding-bottom: 10px;
+                }
+
+
+                a {
+
+                    color: white;
+                    text-decoration: none;
+
+
+                    i {
+
+                        font-size: 30px;
+                        margin-left: 50px;
+                    }
+
+                }
+
+
+                span {
+
+                    color: white;
+                    margin-left: 30px;
+                    font-size: 14px;
+                }
+
+
+
+
+            }
+        }
+
+        .skill-work:hover {
+
+            background-color: white;
+            color: black;
+        }
+
+        footer {
+
+            border-top: 0.90px solid white;
+            border-bottom: 0.90px solid white;
+            /* padding-top: 10px; */
+
+
+        }
+
+
+
+
+
+    }
+
+    .home-button:hover {
+
+        background-color: white;
+        color: black;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    /*   --------------------Code for works page-------------------- */
+
+    .work-body {
+
+        header {
+
+
+            border-bottom: 0.90px solid white;
+
+        }
+
+        button {
+            position: absolute;
+            margin-top: 10px;
+            right: 40px;
+            width: 100px;
+            height: 30px;
+            font-size: 9px;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+
+        #work-name {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            text-align: center;
+
+
+
+            big {
+
+                font-size: 2.90em;
+                font-weight: bold;
+            }
+
+            small {
+
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+
+
+        }
+
+
+
+
+        main {
+
+
+            color: white;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+
+            .instaclone-container {
+
+                display: flex;
+                justify-content: space-around;
+
+                .instaclone-image {
+
+                    width: 190px;
+                    height: 330px;
+
+
+                    img {
+
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+
+
+
+        .cim-container {
+
+            display: flex;
+            justify-content: space-around;
+
+            .cim-image {
+
+                width: 190px;
+                height: 400px;
+                overflow: hidden;
+
+
+                img {
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+
+        h2 {
+            padding-top: 10px;
+        }
+
+
+
+        footer {
+
+            border-top: 0.90px solid white;
+            border-bottom: 0.90px solid white;
+            /* padding-top: 10px; */
+
+
+        }
+
+
+
+
+    }
+
+}
