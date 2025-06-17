@@ -5,47 +5,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="progresscircle.css">
+
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <style>
+
+        .skill-container{
+
+            display: flex;
+            justify-content: center;
+        }
+        .skills-section {
+            display: flex;
+            gap: 50px;
+            background: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+
+        .skill {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .outer-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#3498db 0deg, #440c0c 0deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 1s linear;
+        }
+
+        .inner-circle {
+            width: 120px;
+            height: 120px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .skill-name {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="static/css/index.css">
-<link rel="stylesheet" href="static/css/m_index.css">
 
 <body>
-    <header class="index-header">
-        <nav><a href="index.html" class="navigation_link"><button class="button">HOME</button></a>
-            <a href="works.html" class="navigation_link"><button class="button">MY WORKS</button></a>
-            <a href="about.html" class="navigation_link"><button class="button">ABOUT</button></a>
-        </nav>
+    <!--     
+    <video autoplay muted id="myVideo">
+        <source src="static/videos/PORTFOLIO_BACKGROUND_VIDEO.mp4" type="video/mp4">
+      </video> -->
+    <header>
+        <div class="nav-division">
+            <nav>
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">WORKS</a>
+                <a href="">PROJECTS</a>
+            </nav>
+        </div>
+        <div class="my-information">
+            <div class="my-information-division">
+                <div class="my-image">
+                    <img src="static/images/supawork-photo-20250308T112306891Z.png" alt="">
+                </div>
+                <div class="my-details">
+                    <div>
+                        <h2>R O H I T H </h2>
+                        <pre>F R O N T E N D    D E V E L O P E R</pre>
+                        <!-- <small id="mobile"> <small class="detail">MOBILE :</small> 9398824573</small>
+                        <small> <small class="detail">MY MAIL ID:</small> rohithtallam289@gmail.com</small>
+                        <small id="address"> <small class="detail">ADDRESS : </small> FROM BENGALURU , INDIA</small> -->
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="td_"><small>MOBILE</small></td>
+                                    <td id="mobile">9398824573</td>
+
+                                </tr>
+                                <tr>
+                                    <td id="td_"><small>MAIL</small></td>
+                                    <td id="mail">rohithtallam289@gmail.com</td>
+                                </tr>
+
+                                <tr>
+                                    <td id="td_"><small>ADDRESS</small></td>
+                                    <td id="address"> FROM BENGALURU ,INDIA</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="contact-icons">
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a href=""><i class="bi bi-github"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="index-main">
+    <main>
+        <section class="content-section">
+            <div class="content">
 
-        <div class="name">
-            <p>
-            <em>Hey there..! Currently you are visiting the My Portfolio website designed by ME</em>
-                <em>I' M a Web developer from Banglore..</em>
-                <em>Glad to introduce Myself.....</em> 
-            </em>
-            </p>
-            <p class="iam">I 'm</p>
-            <h1 class="name"> R <div class="rotate"></div> H I T H</h1>
-            <ul>
-                <li>WED DEVELOPER</li>
-                <li>STUDENT</li>
-                <li>LEARNER</li>
+                <p>Hi there! I'm a passionate front-end developer who loves turning creative ideas into clean,
+                    responsive, and user-friendly websites. With a strong eye for detail and a deep appreciation for
+                    good design, I specialize in building smooth, interactive interfaces that offer great user
+                    experiences across all devices. Whether it’s crafting pixel-perfect layouts or optimizing for
+                    performance, I can write clean, maintainable code using HTML, CSS, JavaScript, and
+                    modern frameworks.<br>
+                    Over the years, I’ve worked on a variety of projects that have helped me grow both technically and
+                    creatively. I enjoy collaborating with designers, developers, and clients to bring ideas to
+                    life—translating concepts into functional digital products. I'm always exploring the latest trends
+                    in front-end development and continuously pushing myself to learn and improve. Let's build something
+                    amazing together!</p>
+                <div class="content-buttons">
+                    <a href=""><button id="explore">EXPLORE</button></a>
+                    <a href=""><button id="checkout">CHECKOUT THE RESUME</button></a>
+                </div>
+            </div>
+        </section>
 
-            </ul>
-        </div>
-        <div class="click-buttons">
-            <div class="c-button"><a href=""><button>Contact</button></a></div>
-            <div class="c-button"><a href=""><button>Know more about Me</button></a></div>
-        </div>
+        <section class="services-section">
+            <div class="services">
+                <h2>Services_</h2>
+                <div class="services-division">
+
+                    <div class="s-div-item">
+                        <div id="image"><i class="bi bi-laptop"></i></div>
+                        <h5>CREATIVE DESIGN</h5>
+                        <p>I have an good experience in clear,modern web designs</p>
+                    </div>
 
 
+
+                    <div class="s-div-item">
+                        <div id="image"><i class="bi bi-laptop"></i></div>
+                        <h5>RESPONSIVE DESIGN</h5>
+                        <p>I have an good experience in clear,modern web designs</p>
+                    </div>
+
+
+                    <div class="s-div-item">
+                        <div id="image"><i class="bi bi-laptop"></i></div>
+                        <h5>WED DEVELOPMENT</h5>
+                        <p>I have an good experience in clear,modern web designs</p>
+                    </div>
+
+
+                    <div class="s-div-item">
+                        <div id="image"><i class="bi bi-laptop"></i></div>
+                        <h5>UI/UX Friendly </h5>
+                        <p>I have an good experience in clear,modern web designs</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="resume-section">
+            <h2>Resume_</h2>
+            <div class="resume">
+
+            </div>
+        </section> -->
+
+
+        <section class="resume-section">
+            <h2>Skills_</h2>
+            <div class="resume">
+
+            </div>
+        </section>
+
+        <section class="skill-container">
+
+            <div class="skills-section" id="skillsSection">
+                <div class="skill" data-percentage="90">
+                    <div class="outer-circle" id="circle1">
+                        <div class="inner-circle" id="number1">0%</div>
+                    </div>
+                    <div class="skill-name">HTML</div>
+                </div>
+
+                <div class="skill" data-percentage="80">
+                    <div class="outer-circle" id="circle2">
+                        <div class="inner-circle" id="number2">0%</div>
+                    </div>
+                    <div class="skill-name">CSS</div>
+                </div>
+
+                <div class="skill" data-percentage="85">
+                    <div class="outer-circle" id="circle3">
+                        <div class="inner-circle" id="number3">0%</div>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+
+                <div class="skill" data-percentage="70">
+                    <div class="outer-circle" id="circle4">
+                        <div class="inner-circle" id="number4">0%</div>
+                    </div>
+                    <div class="skill-name">React</div>
+                </div>
+            </div>
+        </section>
+        <script>
+            const skillsSection = document.getElementById('skillsSection');
+            const skills = document.querySelectorAll('.skill');
+
+            let animated = false;
+
+            skillsSection.addEventListener('mouseenter', () => {
+                if (!animated) {
+                    skills.forEach((skill, index) => {
+                        let target = +skill.getAttribute('data-percentage');
+                        let number = skill.querySelector('.inner-circle');
+                        let circle = skill.querySelector('.outer-circle');
+                        let count = 0;
+                        let angle = 0;
+                        let interval = setInterval(() => {
+                            if (count >= target) {
+                                clearInterval(interval);
+                            } else {
+                                count++;
+                                angle = (count / 100) * 360;
+                                number.textContent = `${count}%`;
+                                circle.style.background = `conic-gradient(#3498db ${angle}deg, #ddd ${angle}deg)`;
+                            }
+                        }, 20); // Speed of counting (smaller = faster)
+                    });
+                    animated = true;
+                }
+            });
+
+            skillsSection.addEventListener('mouseleave', () => {
+                animated = false;
+                skills.forEach((skill) => {
+                    let number = skill.querySelector('.inner-circle');
+                    let circle = skill.querySelector('.outer-circle');
+                    number.textContent = '0%';
+                    circle.style.background = `conic-gradient(#3498db 0deg, #ddd 0deg)`;
+                });
+            });
+        </script>
+
+
+        <script src="static/script.js"></script>
+
+    </section>
     </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
 </body>
-
-
 
 </html>
