@@ -199,78 +199,7 @@
             </div>
         </section>
 
-        <section class="skill-container">
-
-            <div class="skills-section" id="skillsSection">
-                <div class="skill" data-percentage="90">
-                    <div class="outer-circle" id="circle1">
-                        <div class="inner-circle" id="number1">0%</div>
-                    </div>
-                    <div class="skill-name">HTML</div>
-                </div>
-
-                <div class="skill" data-percentage="80">
-                    <div class="outer-circle" id="circle2">
-                        <div class="inner-circle" id="number2">0%</div>
-                    </div>
-                    <div class="skill-name">CSS</div>
-                </div>
-
-                <div class="skill" data-percentage="85">
-                    <div class="outer-circle" id="circle3">
-                        <div class="inner-circle" id="number3">0%</div>
-                    </div>
-                    <div class="skill-name">JavaScript</div>
-                </div>
-
-                <div class="skill" data-percentage="70">
-                    <div class="outer-circle" id="circle4">
-                        <div class="inner-circle" id="number4">0%</div>
-                    </div>
-                    <div class="skill-name">React</div>
-                </div>
-            </div>
-        </section>
-        <script>
-            const skillsSection = document.getElementById('skillsSection');
-            const skills = document.querySelectorAll('.skill');
-
-            let animated = false;
-
-            skillsSection.addEventListener('mouseenter', () => {
-                if (!animated) {
-                    skills.forEach((skill, index) => {
-                        let target = +skill.getAttribute('data-percentage');
-                        let number = skill.querySelector('.inner-circle');
-                        let circle = skill.querySelector('.outer-circle');
-                        let count = 0;
-                        let angle = 0;
-                        let interval = setInterval(() => {
-                            if (count >= target) {
-                                clearInterval(interval);
-                            } else {
-                                count++;
-                                angle = (count / 100) * 360;
-                                number.textContent = `${count}%`;
-                                circle.style.background = `conic-gradient(#3498db ${angle}deg, #ddd ${angle}deg)`;
-                            }
-                        }, 20); // Speed of counting (smaller = faster)
-                    });
-                    animated = true;
-                }
-            });
-
-            skillsSection.addEventListener('mouseleave', () => {
-                animated = false;
-                skills.forEach((skill) => {
-                    let number = skill.querySelector('.inner-circle');
-                    let circle = skill.querySelector('.outer-circle');
-                    number.textContent = '0%';
-                    circle.style.background = `conic-gradient(#3498db 0deg, #ddd 0deg)`;
-                });
-            });
-        </script>
-
+      
 
         <script src="static/script.js"></script>
 
